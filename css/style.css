@@ -16,6 +16,24 @@ a{
     margin: 0 auto;
 }
 
+.menu__btn{
+    display: none;
+    width: 30px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu__btn span{
+    height: 1px;
+    background-color: #118DA8;
+    width: 100%;
+}
+
 .swiper-container{
     width: 600px;
 }
@@ -24,7 +42,7 @@ a{
     padding: 40px 0;
 }
 
-.menu{
+.head__inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -277,13 +295,17 @@ a{
     border: 1px solid #191919;
     background: #191919;
     padding: 26px 19px 26px 19px;
-    width: 522px;
 }
 
 .subscribe__btn{
     border-radius: 6px;
     background: #118DA8;
     padding: 15px 20px;
+}
+
+.subscribe__form input{
+    width: 100%;
+    
 }
 
 .footer__social-icon{
@@ -342,9 +364,6 @@ a{
     .subscribe__right{
         margin-left: 0;
     }
-    .subscribe__name-decor{
-        width: 425px;
-    }
     .subscribe__title{
         font-size: 52px;
     }
@@ -357,6 +376,25 @@ a{
 }
 
 @media (max-width: 640px){
+    .header__menu-list{
+        width: 153px;
+        background-color: #118DA8;
+        color: #fff;
+        flex-direction: column;
+        gap: 20px 0;
+        padding: 25px 25px;
+        position: absolute;
+        right: 10px;
+        transform: translateY(-200%);
+        transition: transform .5s ease;
+    }
+    
+    .menu--open{
+        transform: translateY(0%);
+    }
+    .menu__btn{
+        display: flex;
+    }
     .podcast__inner{
         align-items: flex-start;
     }
@@ -425,11 +463,6 @@ a{
         font-size: 30px;
         width: 200px;
     }
-    .subscribe__name-decor{
-        width: 310px;
-    }
-
-    
     .footer__nav{
         justify-content: normal;
     }
@@ -443,6 +476,12 @@ a{
     .podcast__iconss{
         padding-right: 0;
         display: inline-block;
+    }
+}
+
+@media (max-width: 550px){
+    .subscribe__name-decor{
+        padding: 10px 10px;
     }
 }
 
@@ -475,8 +514,6 @@ a{
     .podcast__icons{
         gap: 7px;
     }
-
-
     .episodes__content{
         padding-left: 0;
     }
