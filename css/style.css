@@ -2,6 +2,7 @@ body{
     background-color: #191919;
     font-family: 'DM Sans', sans-serif;
     color: #fff;
+    overflow-x: hidden;
 }
 
 a{
@@ -139,7 +140,6 @@ a{
 
 .episodes__content{
     padding-left: 53px;
-    width: 778px;
 }
 
 .episodes__theme{
@@ -356,10 +356,97 @@ a{
     }
 }
 
-@media (max-width: 414px){
+@media (max-width: 640px){
     .podcast__inner{
         align-items: flex-start;
     }
+    .podcast__right{
+        padding-left: 20px;
+    }
+    .swiper-container{
+        width: 350px;
+    }
+    .episodes{
+        padding-top: 0;
+    }
+    .episodes__content{
+        padding-left: 0;
+    }
+    .episodes__theme{
+        margin: 10px auto;
+    }
+    .episodes__title{
+        font-size: 50px;
+    }
+    .episodes__card{
+        display: inline-block;
+        width: auto;
+        height: auto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .episodes__title{
+        font-size: 32px;
+    }
+    .episodes__btn{
+        width: 130px;
+    }
+    .episodes__img{
+        width: 450px;
+        height: 450px;
+        object-fit: contain;
+    }
+    .episodes__info{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .episodes__text{
+        line-height: 20px;
+    }
+
+    .people__left{
+        margin-right: 10px;
+    }
+    .people__btn{
+        padding: 30px 20px;
+    }
+    .people__btn img{
+        width: 40px;
+    }
+    .people__name{
+        font-size: 30px;
+    }
+    .people__text{
+        font-size: 15px;
+        margin-bottom: 10px;
+        width: auto;
+    }
+    .subscribe__title{
+        font-size: 30px;
+        width: 200px;
+    }
+    .subscribe__name-decor{
+        width: 310px;
+    }
+
+    
+    .footer__nav{
+        justify-content: normal;
+    }
+    .footer__right{
+        gap: 50px;
+        padding-left: 30px;
+    }
+    .footer__nav-left{
+        padding-right: 0;
+    }
+    .podcast__iconss{
+        padding-right: 0;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 414px){
     .swiper-container{
         width: 250px;
     }
