@@ -489,6 +489,9 @@ a{
         padding-right: 0;
         display: inline-block;
     }
+    .podcast__icon{
+        padding-bottom: 10px;
+    }
 }
 
 @media (max-width: 550px){
