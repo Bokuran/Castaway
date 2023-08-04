@@ -376,6 +376,12 @@ a{
 }
 
 @media (max-width: 640px){
+
+    .swiper-button-next,
+    .swiper-button-prev,
+    .swiper-pagination{
+        visibility: hidden;
+    }
     .header__menu-list{
         width: 153px;
         background-color: #118DA8;
@@ -387,8 +393,8 @@ a{
         right: 10px;
         transform: translateY(-200%);
         transition: transform .5s ease;
+        z-index: 5;
     }
-    
     .menu--open{
         transform: translateY(0%);
     }
@@ -403,6 +409,7 @@ a{
     }
     .swiper-container{
         width: 350px;
+        z-index: -1;
     }
     .episodes{
         padding-top: 0;
@@ -487,7 +494,7 @@ a{
 
 @media (max-width: 414px){
     .swiper-container{
-        width: 250px;
+        width: 200px;
     }
     .podcast__decor{
         width: 50px;
@@ -496,17 +503,17 @@ a{
         padding: 50px 0 0 15px;
     }
     .podcast__text{
-        font-size: 15px;
+        font-size: 18px;
         line-height: 25px;
         padding-bottom: 40px;
         letter-spacing: 1px;
     }
     .podcast__text-decor{
-        width: 35px;
-        display: block;
+        display: inline-block;
     }
     .podcast__text-decor::before{
         bottom: -2px;
+        width: 35px;
     }
     .podcast__text-weight{
         font-size: 25px;
@@ -530,11 +537,15 @@ a{
     .episodes__content{
         width: 310px;
     }
+    .episodes__top{
+        padding-top: 50px;
+        margin-bottom: 30px;
+    }
     .episodes__title{
-        font-size: 32px;
+        font-size: 22px;
     }
     .episodes__btn{
-        width: 130px;
+        width: 100%;
     }
     .episodes__img{
         width: 200px;
@@ -548,5 +559,37 @@ a{
         line-height: 20px;
         width: 300px;
         margin-right: 0;
+    }
+    .people{
+        padding-top: 50px;
+    }
+    .people__left{
+        width: auto;
+    }
+    .people__content{
+        display: inline-block;
+    }
+    .subscribe__inner{
+        display: inline-block;
+        padding: 20px 20px;
+    }
+    .subscribe-decor{
+        width: 100px;
+        bottom: -42px;
+        left: -16px;
+    }
+    .footer__nav{
+        display: inline-block;
+        gap: 10px;
+    }
+    .podcast__icons{
+        width: 100%;
+    }
+    .footer__nav-right{
+        padding-right: 0;
+    }
+    .footer__right{
+        padding-left: 0;
+        padding-top: 30px;
     }
 }
