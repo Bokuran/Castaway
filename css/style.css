@@ -395,6 +395,10 @@ a{
         transition: transform .5s ease;
         z-index: 5;
     }
+    .menu__link{
+        text-align: center;
+        border-bottom: 3px solid #191919;
+    }
     .menu--open{
         transform: translateY(0%);
     }
