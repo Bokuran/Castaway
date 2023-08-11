@@ -5,201 +5,331 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 
 <body>
-    <header class="header">
-        <div class="container head__inner">
-            <a href="">
-                <img class="logo" src="./img/logo.svg" alt="">
-            </a>
-            <nav class="menu header__menu">
-                <button class="menu__btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="menu__list header__menu-list">
-                    <li class="menu__link">
-                        <a href="">Home</a>
-                    </li>
-                    <li class="menu__link">
-                        <a href="">Episodes</a>
-                    </li>
-                    <li class="menu__link">
-                        <a href="">About</a>
-                    </li>
-                    <li class="menu__link">
-                        <a href="">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+    <header class="display header">
+        <div class="container">
+            <div class="header__menu">
+                <div class="logo">
+                    <img src="./img/header/logo.svg" alt="">
+                </div>
+                <nav class="nav__link">
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Кейсы</a></li>
+                        <li><a href="#">О нас</a></li>
+                    </ul>
+                </nav>
+                <div class="header__button">
+                    <div class="heder__links">
+                        <button class="header__btn">Заполнить бриф</button>
+                    </div>
+                    <div class="heder__menu__inner">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__title">
+                <img class="header__title-img" src="./img/header/title.svg" alt="">
+                <p class="header__text">БЫТЬ ХРАБРЫМИ, ВДОХНОВЛЯТЬ,<br> И РАСШИРЯТЬ ПРЕДЕЛЫ ВОЗМОЖНОГО</p>
+            </div>
         </div>
     </header>
+    <nav class="menu">
+        <div class="container container-menu">
+            <div class="header__top">
+                <div class="logo">
+                    <img src="./img/header/logo.svg" alt="">
+                </div>
+                <div class="header__button">
+                    <button class="header__btn">Заполнить бриф</button>
+                    <div class="close-btn">
+                        <img src="./img/header/close.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="menu__list">
+                <ul class="list__top">
+                    <li><a href="#">Главная</a>
+                        <a class="list__bottom" href="">FAQ</a>
+                    </li>
+                    <li><a href="#">Услуги</a>
+                        <a class="list__bottom" href="">Дайджест</a>
+                    </li>
+                    <li><a href="#">Кейсы</a>
+                        <a class="list__bottom" href="">Контакты</a>
+                    </li>
+                    <li><a href="#">О нас</a>
+                        <a class="list__bottom" href="">Партнерам</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <main class="main">
-        <section class="podcast">
-            <div class="container podcast__inner">
-                <div class="image-slider swiper-container">
-                    <div class="podcast__item swiper-wrapper">
-                        <div class="podcast__left swiper-slide">
-                            <div class="image-slider__image">
-                                <img class="podcast__decor" src="./img/decor.png" alt="">
-                                <img class="podcast__swiper" src="./img/left-img.png" alt="">
-                            </div>
-                        </div>
-                        <div class="podcast__left swiper-slide">
-                            <div class="image-slider__image">
-                                <img class="podcast__decor" src="./img/decor.png" alt="">
-                                <img class="podcast__swiper" src="./img/left-img.png" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-
-                </div>
-                <div class="podcast__right">
-                    <h1 class="podcast__text">
-                        Take your podcast to the
-                        <span class="podcast__text-decor">next</span>
-                        <span class="podcast__text-weight">level</span>
-                    </h1>
-                    <div class="podcast__right-icon">
-                        <p>Listen on</p>
-                        <ul class="podcast__icons">
-                            <li class="podcast__icon">
-                                <a href="">
-                                    <img src="./img/icon-1.svg" alt="">
-                                </a>
-                            </li>
-                            <li class="podcast__icon">
-                                <a href="">
-                                    <img src="./img/icon-2.svg" alt="">
-                                </a>
-                            </li>
-                            <li class="podcast__icon">
-                                <a href="">
-                                    <img src="./img/icon-3.svg" alt="">
-                                </a>
-                            </li>
-                            <li class="podcast__icon">
-                                <a href="">
-                                    <img src="./img/icon-4.svg" alt="">
-                                </a>
-                            </li>
-                            <li class="podcast__icon">
-                                <a href="">
-                                    <img src="./img/icon-5.svg" alt="">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
-
-        <section class="episodes">
+        <section class="display vide">
             <div class="container">
-                <div class="episodes__inner">
-                    <div class="episodes__top">
-                        <h2 class="episodes__title">Latest episodes</h2>
-                        <div class="episodes__button">
-                            <button class="episodes__btn">View all episodes</button>
-                        </div>
+                <div class="video__content">
+                    <div class="video__left">
+                        <p class="vide__text">Наша команда всегда стремится совершенствовать старые подходы, искать
+                            новые
+                            инструменты и каналы развития, учиться, не усложнять, общаться, вдохновлять людей и
+                            продвигать
+                            бренды, в которые действительно верит.</p>
+                        <p class="vide__text">Для нас люди на первом месте. Мы созданы не для всех, но мы созданы для
+                            тех,
+                            кто верит, что цель - это не просто звук, или слово, или деловое предложение, а образ жизни
+                            и
+                            мысли. Для тех, кто убежден, что вместе мы сможем достичь немыслимого!</p>
                     </div>
-                    <div class="episodes__cards">
-                        <div class="episodes__card">
-                            <img class="episodes__img" src="./img/episodes-1.png" alt="">
-                            <div class="episodes__content">
-                                <div class="episodes__theme">Gear</div>
-                                <div class="episodes__episode">Episode 3</div>
-                                <div class="episodes__info">Should you get outboard audio gear?</div>
-                                <p class="episodes__text">Is hardware really worth it when it comes to podcasting? The
-                                    answer is...it depends. Here’s our reasons on why you might want to consider picking
-                                    something up.
-                                </p>
-                                <div class="episodes__button">
-                                    <button class="episodes__content-btn">View Episode Details</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="episodes__card">
-                            <img class="episodes__img" src="./img/episodes-2.png" alt="">
-                            <div class="episodes__content">
-                                <div class="episodes__theme episodes__theme-big">Tips & Tricks</div>
-                                <div class="episodes__episode">Episode 2</div>
-                                <div class="episodes__info">Mic tricks to take you to the next level</div>
-                                <p class="episodes__text">Stop rolling with those default settings on your mic. These
-                                    small
-                                    tweaks will take you from sounding good to great.
-                                </p>
-                                <div class="episodes__button">
-                                    <button class="episodes__content-btn">View Episode Details</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="episodes__card">
-                            <img class="episodes__img" src="./img/episodes-3.png" alt="">
-                            <div class="episodes__content">
-                                <div class="episodes__theme">Gear</div>
-                                <div class="episodes__episode">Episode 1</div>
-                                <div class="episodes__info">The best microphone under $200</div>
-                                <p class="episodes__text">With so many microphones on the market, how are you supposed
-                                    to
-                                    know what’s the best? Take a look at our top picks.
-                                </p>
-                                <div class="episodes__button">
-                                    <button class="episodes__content-btn">View Episode Details</button>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="video__right">
+                        <iframe width="831" height="665" src="https://www.youtube.com/embed/5lofljCF12E"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section class="people">
+        <section class="display cases">
             <div class="container">
-                <div class="people__content">
-                    <div class="people__left">
-                        <button class="people__btn"><img src="./img/people-btn.png" alt=""></button>
-                        <div class="people__theme">Meet your host</div>
-                        <div class="people__name">Jacob Paulaner</div>
-                        <p class="people__text">Jacob has a background in audio engineering, and has been podcasting
-                            since the early days.</p>
-                        <p class="people__text">He’s here to help you level up your game by sharing everything he’s
-                            learned along the way.</p>
+                <div class="cases__title">
+                    <h1>КЕЙСЫ</h1>
+                </div>
+                <div class="cases__items">
+                    <a href="#" class="cases__item cases__item-1">
+                        <span>Помощь студентам обучающимся дистанционно</span>
+                        <div class="cases__footer">
+                            <div>
+                                <div>Разработка сайта, выход в ТОП-10 и</div>
+                                <div>настройка рекламы в серой нише</div>
+                            </div>
+                            <span>></span>
+                        </div>
+                    </a>
+                    <a href="#" class="cases__item cases__item-2">
+                        <span>Помощь студентам обучающимся дистанционно</span>
+                        <div class="cases__footer">
+                            <div>
+                                <div>Разработка сайта, выход в ТОП-10 и</div>
+                                <div>настройка рекламы в серой нише</div>
+                            </div>
+                            <span>></span>
+                        </div>
+                    </a>
+                    <a href="#" class="cases__item cases__item-3">
+                        <span>Помощь студентам обучающимся дистанционно</span>
+                        <div class="cases__footer">
+                            <div>
+                                <div>Разработка сайта, выход в ТОП-10 и</div>
+                                <div>настройка рекламы в серой нише</div>
+                            </div>
+                            <span>></span>
+                        </div>
+                    </a>
+                    <a href="#" class="cases__item cases__item-4">
+                        <span>Помощь студентам обучающимся дистанционно</span>
+                        <div class="cases__footer">
+                            <div>
+                                <div>Разработка сайта, выход в ТОП-10 и</div>
+                                <div>настройка рекламы в серой нише</div>
+                            </div>
+                            <span>></span>
+                        </div>
+                    </a>
+                    <a href="#" class="cases__item cases__item-5">
+                        <span>Помощь студентам обучающимся дистанционно</span>
+                        <div class="cases__footer">
+                            <div>
+                                <div>Разработка сайта, выход в ТОП-10 и</div>
+                                <div>настройка рекламы в серой нише</div>
+                            </div>
+                            <span>></span>
+                        </div>
+                    </a>
+                    <a href="#" class="cases__item cases__item-6">
+                        <span>Помощь студентам обучающимся дистанционно</span>
+                        <div class="cases__footer">
+                            <div>
+                                <div>Разработка сайта, выход в ТОП-10 и</div>
+                                <div>настройка рекламы в серой нише</div>
+                            </div>
+                            <span>></span>
+                        </div>
+                    </a>
+                    
+                </div>
+                <button class="cases__button"><a href="">Смотреть ещё</a></button>
+            </div>
+        </section>
+        <section class="display customers">
+            <div class="container">
+                <div class="slider__title">
+                    <h1>КЛИЕНТЫ</h1>
+                </div>
+                <div class="customers__content swiper swiper1">
+                    <div class="customers__items swiper-wrapper">
+                        <div class="customers__item swiper-slide">
+                            <img src="/img/slider/slider-1.png" alt="">
+                            <img src="./img/slider/slider-2.png" alt="">
+                            <img src="./img/slider/slider-3.png" alt="">
+                            <img src="./img/slider/slider-4.png" alt="">
+                            <img src="./img/slider/slider-5.png" alt="">
+                            <img src="./img/slider/slider-6.png" alt="">
+                            <img src="./img/slider/slider-7.png" alt="">
+                            <img src="./img/slider/slider-8.png" alt="">
+                        </div>
+                        <div class="customers__item swiper-slide">
+                            <img src="/img/slider/slider-1.png" alt="">
+                            <img src="./img/slider/slider-2.png" alt="">
+                            <img src="./img/slider/slider-3.png" alt="">
+                            <img src="./img/slider/slider-4.png" alt="">
+                            <img src="./img/slider/slider-5.png" alt="">
+                            <img src="./img/slider/slider-6.png" alt="">
+                            <img src="./img/slider/slider-7.png" alt="">
+                            <img src="./img/slider/slider-8.png" alt="">
+                        </div>
+                        <div class="customers__item swiper-slide">
+                            <img src="/img/slider/slider-1.png" alt="">
+                            <img src="./img/slider/slider-2.png" alt="">
+                            <img src="./img/slider/slider-3.png" alt="">
+                            <img src="./img/slider/slider-4.png" alt="">
+                            <img src="./img/slider/slider-5.png" alt="">
+                            <img src="./img/slider/slider-6.png" alt="">
+                            <img src="./img/slider/slider-7.png" alt="">
+                            <img src="./img/slider/slider-8.png" alt="">
+                        </div>
                     </div>
-                    <div class="people__right">
-                        <img src="./img/people.png" alt="">
+                    <div class="swiper-btn">
+                        <div class="swiper-button-prev swiper-button-prev1">
+                            <img src="./img/slider/prev.png" alt="">
+                        </div>
+                        <div class="swiper-button-next swiper-button-next1">
+                            <img src="./img/slider/prev.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section class="subscribe">
+        <section class="display certificate">
             <div class="container">
-                <div class="subscribe__inner">
-                    <div class="subscribe__left">
-                        <img class="subscribe-decor" src="./img/decor-1.png" alt="">
-                        <div class="subscribe__theme">Email Newsletter</div>
-                        <h3 class="subscribe__title">Subscribe for updates</h3>
-                    </div>
-                    <div class="subscribe__right">
-                        <div class="subscribe__form">
-                            <input class="subscribe__name subscribe__name-decor" type="text" placeholder="Name">
-                            <input class="subscribe__email subscribe__name-decor" type="text" placeholder="Email">
-                            <button class="subscribe__btn">Submit</button>
+                <div class="certificate__content swiper swiper2">
+                    <div class="certificate__items swiper-wrapper">
+                        <div class="certificate__item swiper-slide">
+                            <div class="certificate__left">
+                                <img class="certificate__icon" src="./img/certificate/icon-1.png" alt="">
+                                <div class="certificate__info">
+                                    <div class="certificate__name">Елена Киселева</div>
+                                    <div class="certificate__company">Агенство “Люди Дела”</div>
+                                </div>
+                                <div class="certificate__btn swiper-btn">
+                                    <div class="swiper-button-prev swiper-button-prev2">
+                                        <img src="./img/slider/prev.png" alt="">
+                                    </div>
+                                    <div class="swiper-button-next swiper-button-next2">
+                                        <img src="./img/slider/prev.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="certificate__center">
+                                <p class="certificate__center-text">"Агентство рекрутинга “Люди Дела” выражает
+                                    благодарность маркетинговому агентству
+                                    “Traffic13”
+                                    за оперативную и качественную настройку и ведение рекламной компании, а также за
+                                    разработку
+                                    Landing Page.
+                                </p>
+                                <p>
+                                    Рекламная компания, которую разработали для нас специалисты агентства, работает
+                                    эффективно и
+                                    корректировалась с учетом всех наших пожеланий.
+                                </p>
+                            </div>
+                            <div class="certificate__right">
+                                <img src="./img/certificate/certificate-1.png" alt="">
+                            </div>
                         </div>
+                        <div class="certificate__item swiper-slide">
+                            <div class="certificate__left">
+                                <img class="certificate__icon" src="./img/certificate/icon-1.png" alt="">
+                                <div class="certificate__btn swiper-btn">
+                                    <div class="swiper-button-prev swiper-button-prev2">
+                                        <img src="./img/slider/prev.png" alt="">
+                                    </div>
+                                    <div class="swiper-button-next swiper-button-next2">
+                                        <img src="./img/slider/prev.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="certificate__info">
+                                    <div class="certificate__name">Елена Киселева</div>
+                                    <div class="certificate__company">Агенство “Люди Дела”</div>
+                                </div>
+
+                            </div>
+                            <div class="certificate__center">
+                                <p class="certificate__center-text">"Агентство рекрутинга “Люди Дела” выражает
+                                    благодарность маркетинговому агентству
+                                    “Traffic13”
+                                    за оперативную и качественную настройку и ведение рекламной компании, а также за
+                                    разработку
+                                    Landing Page.
+                                </p>
+                                <p>
+                                    Рекламная компания, которую разработали для нас специалисты агентства, работает
+                                    эффективно и
+                                    корректировалась с учетом всех наших пожеланий.
+                                </p>
+                            </div>
+                            <div class="certificate__right">
+                                <img src="./img/certificate/certificate-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="application">
+            <div class="container">
+                <div class="application__text">
+                    <h2 class="application__title">ОСТАВИТЬ ЗАЯВКУ</h2>
+                    <p>Давайте поговорим о том,</p>
+                    <p class="application__text-decor">как мы можем сделать <span>отличную работу</span> вместе</p>
+                </div>
+                <div class="application__content">
+                    <div class="application__left">
+                        <div class="application__name">ФИО <span>*</span></div>
+                        <input type="text">
+                        <div class="application__name">Сайты</div>
+                        <input type="text">
+                        <div class="application__name">Телефон</div>
+                        <input type="text">
+                    </div>
+                    <div class="application__center">
+                        <div class="application__name">Почта <span>*</span></div>
+                        <input type="text">
+                        <div class="application__name">Расскажите о компании</div>
+                        <input type="text">
+                        <div class="application__name">Когда удобно принять звонок</div>
+                        <input type="text">
+                    </div>
+                    <div class="application__right">
+                        <div class="application__right-chois">Какие услуги интересуют?</div>
+                        <select>
+                            <option>SEO продвижение сайтов</option>
+                            <option>Настройка</option>
+                            <option>Настройка и ведение контекстной рекламы</option>
+                        </select>
+                        <button class="application__btn">Отправить</button>
                     </div>
                 </div>
             </div>
@@ -207,90 +337,41 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="footer__nav">
-                <div class="footer__left">
-                    <img class="logo" src="./img/logo.svg" alt="">
-                    <div class="footer__social">
-                        <ul>
-                            <li class="footer__social-icon">
-                                <a href=""><img src="./img/footer-social-1.png" alt=""></a>
-                                <a href=""><img src="./img/footer-social-2.png" alt=""></a>
-                                <a href=""><img src="./img/footer-social-3.png" alt=""></a>
-                            </li>
-                        </ul>
+            <div class="footer__contetn">
+                <div class="footer__contetn-logo">
+                    <img src="./img/header/logo.svg" alt="">
+                </div>
+                <div class="footer__contetn-messenger">
+                    <div class="footer__text">Полезный дайджест <br>для Вашего бизнеса</div>
+                    <div class="footer__content-icons">
+                        <img class="footer__text-vk" src="./img/footer/icon-vk.png" alt="">
+                        <img src="./img/footer/icon-tg.png" alt="">
                     </div>
                 </div>
-                <div class="footer__right">
-                    <div class="footer__nav-left">
-                        <ul class="footer__nav-link">
-                            <li>
-                                <a href="">Home</a>
-                            </li>
-                            <li>
-                                <a href="">About</a>
-                            </li>
-                            <li>
-                                <a href="">Episode</a>
-                            </li>
-                            <li>
-                                <a href="">Contact</a>
-                            </li>
-                        </ul>
+                <div class="footer__contetn-info">
+                    <div class="footer__time">Пн - Пт (9:00 - 18:00 МСК)</div>
+                    <div class="footer__tel">Тел: 8 (965) 548 74 26</div>
+                    <div class="footer__email">Email: info@traffic13.ru</div>
+                </div>
+                <div class="footer__content-contacts">
+                    <div class="footer__content-write">Написать нам</div>
+                    <div class="footer__content-contacts-icon">
+                        <img src="./img/footer/icon-vk-s.png" alt="">
+                        <img src="./img/footer/icon-tg-s.png" alt="">
+                        <img src="./img/footer/icon-whatsapp-s.png" alt="">
                     </div>
-                    <div class="footer__nav-right">
-                        <ul class="footer__nav-link">
-                            <li>
-                                <a href="">Style Guide</a>
-                            </li>
-                            <li>
-                                <a href="">Instructions</a>
-                            </li>
-                            <li>
-                                <a href="">Changelog</a>
-                            </li>
-                            <li>
-                                <a href="">Credit</a>
-                            </li>
-                            <li>
-                                <a href="">Powered by Webflow</a>
-                            </li>
-                            <li>
-                                <a href="">Licenses</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <ul class="podcast__iconss">
-                        <li class="podcast__icon">
-                            <a href="">
-                                <img src="./img/icon-1.svg" alt="">
-                            </a>
-                        </li>
-                        <li class="podcast__icon">
-                            <a href="">
-                                <img src="./img/icon-2.svg" alt="">
-                            </a>
-                        </li>
-                        <li class="podcast__icon">
-                            <a href="">
-                                <img src="./img/icon-3.svg" alt="">
-                            </a>
-                        </li>
-                        <li class="podcast__icon">
-                            <a href="">
-                                <img src="./img/icon-4.svg" alt="">
-                            </a>
-                        </li>
-                        <li class="podcast__icon">
-                            <a href="">
-                                <img src="./img/icon-5.svg" alt="">
-                            </a>
-                        </li>
-                    </ul>
+                </div>
+                <div class="footer__contetn-button">
+                    <div class="footer__contetn-partner">По партнерству: <br>mezentsev66@yandex.ru</div>
+                    <button class="footer__contetn-btn">Заполнить бриф</button>
                 </div>
             </div>
         </div>
     </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
