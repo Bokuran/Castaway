@@ -4,6 +4,7 @@ body{
     font-weight: 500;
     background: #140818;
     color: #fff;
+    overflow-x: hidden;
 }
 
 ul,li,a{
@@ -21,10 +22,12 @@ button{
     padding: 0 30px;
 }
 
-
-
 .main{
     flex-grow: 1;
+}
+
+.display{
+    display: none;
 }
 
 /**/
@@ -393,42 +396,30 @@ button{
     padding-bottom: 40px;
 }
 
+
+
+
+
+
+
+
+
 .application{
     padding-top: 150px;
 }
 
-.application__content{
-    padding-top: 92px;
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-}
-
-.application__left,
-.application__center,
-.application__right{
-    display: flex;
-    flex-direction: column;
-}
-
-.application__left input,
-.application__center input{
-    border-bottom: 1px solid;
-    width: 346px;
-    margin-bottom: 77px;
-}
-
-.application__btn{
-    border-radius: 52.114px;
-    border: 2px solid var(--stroke-color, #C536EF);
-    background: rgba(255, 87, 255, 0.08);
-    box-shadow: 0px 0px 22px 0px rgba(176, 102, 255, 0.15);
-    padding: 24px 0;
-    margin-top: 175px;
-}
-
 .application__text{
     font-size: 46px;
+    padding-bottom: 92px;
+}
+
+.application__title{
+    font-size: 78px;
+    font-weight: 700;
+    background: var(--h-1-color, linear-gradient(118deg, #FF57FF 0%, #8C3CED 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .application__text-decor{
@@ -443,14 +434,48 @@ button{
     font-size: 46px;
 }
 
-.application__title{
-    font-size: 78px;
-    font-weight: 700;
-    background: var(--h-1-color, linear-gradient(118deg, #FF57FF 0%, #8C3CED 100%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.application__input{
+    width: 346px;
 }
+
+.application__input input{
+    border-bottom: 1px solid;
+    width: 100%;
+    resize: horizontal;
+    margin-bottom: 77px;
+}
+
+.application__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 90px;
+}
+
+.application__button{
+    margin-top: 175px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 52px;
+    border: 2px solid var(--stroke-color, #C536EF);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(115, 113, 255, 0.12) 100%);
+    padding: 24px 0 24px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footer__contetn{
     margin-top: 100px;
