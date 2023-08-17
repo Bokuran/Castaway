@@ -53,11 +53,11 @@ a{
     font-weight: 400;
     display: flex;
     gap: 40px;
+    transition: ease 0.5s;
 }
 
 .menu__link:hover{
     color: #118DA8;
-    transition: ease 0.5s;
 }
 
 .podcast{
