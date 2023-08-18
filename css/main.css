@@ -53,7 +53,7 @@ a{
     font-weight: 400;
     display: flex;
     gap: 40px;
-    transition: ease 0.5s;
+    transition: all 1s;
 }
 
 .menu__link:hover{
